@@ -1,0 +1,19 @@
+#+BIND: org-export-use-babel nil
+#+TITLE: readme
+#+AUTHOR: Paul Lodder
+#+EMAIL: <paul_lodder@live.nl>
+#+DATE: December 13, 2020
+#+LATEX: \setlength\parindent{0pt}
+#+LaTeX_HEADER: \usepackage{minted}
+#+LATEX_HEADER: \usepackage[margin=0.8in]{geometry}
+#+LATEX_HEADER_EXTRA:  \usepackage{mdframed}
+#+LATEX_HEADER_EXTRA: \BeforeBeginEnvironment{minted}{\begin{mdframed}}
+#+LATEX_HEADER_EXTRA: \AfterEndEnvironment{minted}{\end{mdframed}}
+#+MACRO: NEWLINE @@latex:\\@@ @@html:<br>@@
+#+PROPERTY: header-args :exports both :session readme :cache :results value
+#+OPTIONS: ^:nil
+#+LATEX_COMPILER: pdflatex
+* setup
+#+BEGIN_SRC
+pip install -r requirements.txt
+#+END_SRC
